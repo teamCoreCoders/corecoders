@@ -1,3 +1,45 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html, body {
+  overflow-y: scroll;
+  background: transparent !important;
+  scrollbar-gutter: stable;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;    /* Firefox */
+}
+
+html::-webkit-scrollbar, body::-webkit-scrollbar, *::-webkit-scrollbar {
+  display: none !important;
+}
+
+/* Custom minimal scrollbar styles */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: #111; /* black thumb */
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-track {
+  background: #e5e7eb; /* light gray track (tailwind gray-200) */
+}
+
+/* Dark mode scrollbar */
+html.dark ::-webkit-scrollbar-thumb {
+  background: #fff; /* white thumb */
+}
+html.dark ::-webkit-scrollbar-track {
+  background: #1e293b; /* dark track (tailwind slate-800) */
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #111 #e5e7eb;
+}
+html.dark * {
+  scrollbar-color: #fff #1e293b;
+}

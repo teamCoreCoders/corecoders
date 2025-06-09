@@ -3,7 +3,7 @@ import { ArrowRight, Code, Zap, Users } from 'lucide-react';
 
 export const Hero: React.FC = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 via-white to-indigo-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
+    <section className="min-h-screen flex items-center justify-center bg-transparent">
       <div className="w-full max-w-4xl mx-auto px-6 py-24 text-center">
         {/* Logo */}
         <div className="flex justify-center mb-8">

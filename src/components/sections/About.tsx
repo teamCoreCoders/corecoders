@@ -14,15 +14,7 @@ export const About: React.FC = () => {
   ];
 
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-blue-50 dark:from-gray-900 dark:to-gray-800 relative overflow-hidden">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute inset-0" style={{
-          backgroundImage: `linear-gradient(45deg, transparent 40%, rgba(59, 130, 246, 0.1) 50%, transparent 60%)`,
-          backgroundSize: '60px 60px'
-        }}></div>
-      </div>
-      
+    <section className="min-h-screen flex items-center justify-center bg-transparent relative overflow-hidden">
       <div className="relative z-10 max-w-7xl mx-auto px-6 py-20">
         <div className="about-content">
           {/* Header */}
